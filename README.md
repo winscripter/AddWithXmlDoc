@@ -1,4 +1,7 @@
 ﻿# 📃 AddWithXmlDoc
+[![Shield](https://img.shields.io/badge/NUGET-20B2AA?style=for-the-badge)](https://www.nuget.org/packages/AddWithXmlDoc.Core)
+[![Shield](https://img.shields.io/badge/DOWNLOAD-8A2BE2?style=for-the-badge)](https://marketplace.visualstudio.com/items?itemName=winscripter.ExtVSAddWithXmlDoc)
+
 A Visual Studio extension that lets you generate common methods in C# - parameterless constructors, `GetHashCode`, `Equals`, and equality operators - with XML documentation automatically inserted for you.
 
 # ❓ How does it work?
@@ -12,6 +15,11 @@ When you install the extension, you get four new code actions for classes and st
 ![Screenshot](media/Screenshot%202025-08-28%20074816.png)
 
 You no longer have to manually write XML documentation for methods like `GetHashCode` or `Equals` - even an `<inheritdoc ... />` can take some time to write! AddWithXmlDoc does that for you.
+
+# Installation
+Go to the [![Shield](https://img.shields.io/badge/EXTENSION%20IN%20VISUAL%20STUDIO%20MARKETPLACE-8A2BE2?style=for-the-badge)](https://marketplace.visualstudio.com/items?itemName=winscripter.ExtVSAddWithXmlDoc), and click the green "Download" button to get the VSIX.
+
+Double click the VSIX, and that's it! Wait for it to install, and AddWithXmlDoc will be installed on your Visual Studio installation.
 
 # ✨ Example
 Imagine we have a class:

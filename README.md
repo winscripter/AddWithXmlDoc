@@ -115,20 +115,6 @@ After that, open the solution VSAddWithXmlDoc.sln, and click Ctrl+Shift+B in Vis
 # ❔ Got any questions?
 Feel free to create an Issue post on the GitHub Repository if you have any questions, found a bug, or proposing a suggestion!
 
-# 🐞 Known Issues
-One known problem is that when you click to generate equality methods, the class's base list can become incomplete, like so:
-```cs
-public class Class1 :
-```
-This seems to be a bug with the `NormalizeWhitespace()` method in Roslyn. The issue is that we're using an older version, 3.3.1, because
-apparently Visual Studio does not load AddWithXmlDoc if it uses a newer version of Roslyn (i.e. 4.14.0), so we have to use 3.3.1. If you're aware
-on potential fixes of this problem, please let me know by creating an Issue post on the GitHub Repository!
-
-But it's not a major problem. It just takes 2-4 seconds to manually add:
-```cs
-public class Class1 : IEquatable<Class1>
-```
-
 # 🤗 Author
 [winscripter](https://github.com/winscripter)
 

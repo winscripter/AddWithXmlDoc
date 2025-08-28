@@ -10,21 +10,16 @@ internal static class XmlUtil
         TypeDeclarationSyntax tds, IEnumerable<MemberDeclarationSyntax> members)
     {
         // Add IEquatable`1 to the base list
-        tds = tds.WithBaseList(
-            SyntaxFactory.BaseList(
-                [.. tds.BaseList?.Types ?? [],
-                 SyntaxFactory.SimpleBaseType(
-                     SyntaxFactory.GenericName(
-                        SyntaxFactory.Identifier("IEnumerable"))
-                    .WithTypeArgumentList(
-                        SyntaxFactory.TypeArgumentList(
-                            SyntaxFactory.SingletonSeparatedList<TypeSyntax>(
-                                SyntaxFactory.IdentifierName(tds.Identifier.Text))))
-                    .NormalizeWhitespace()
-                 )
-                ]
-            )
-        );
+        tds = (TypeDeclarationSyntax)tds.AddBaseListTypes(
+            SyntaxFactory.SimpleBaseType(
+                SyntaxFactory.GenericName(
+                    SyntaxFactory.Identifier("IEnumerable"))
+            .WithTypeArgumentList(
+                SyntaxFactory.TypeArgumentList(
+                    SyntaxFactory.SingletonSeparatedList<TypeSyntax>(
+                        SyntaxFactory.IdentifierName(tds.Identifier.Text))))
+            .NormalizeWhitespace()
+            ));
 
         string typeName = tds.Identifier.Text;
 

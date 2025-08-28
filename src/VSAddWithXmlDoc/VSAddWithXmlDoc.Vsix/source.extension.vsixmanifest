@@ -3,7 +3,7 @@
   <Metadata>
     <Identity Id="VSAddWithXmlDoc..94e49af1-4caf-464b-be46-31c0ec2e8d53" Version="1.0" Language="en-US" Publisher="winscripter"/>
     <DisplayName>VSAddWithXmlDoc</DisplayName>
-    <Description xml:space="preserve">This extension allows you to add methods like Equals, GetHashCode, and parameterless constructors, with XML documentation inserted for you.</Description>
+    <Description xml:space="preserve">This extension allows you to add methods like Equals, GetHashCode, and parameterless constructors, with XML documentation inserted for you. See more on https://github.com/winscripter/AddWithXmlDoc.</Description>
   </Metadata>
   <Installation>
     <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[15.0,)" />

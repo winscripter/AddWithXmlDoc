@@ -20,7 +20,14 @@
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
     <Version>2.1.0</Version>
-    <PackageReleaseNotes>Added inheritdoc support</PackageReleaseNotes>
+    <PackageReleaseNotes>Changed the following in generated code:
+```cs
+public class C : IEquatable&lt;C&gt;
+```
+to:
+```cs
+public class C : IEquatable&lt;C?&gt;
+```</PackageReleaseNotes>
   </PropertyGroup>
 
   <ItemGroup>

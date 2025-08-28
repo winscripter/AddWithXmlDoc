@@ -9,6 +9,8 @@ When you install the extension, you get four new code actions for classes and st
 - `XML: Add Equality Methods to Members`: Same as the one above, but for both Fields and Properties.
 - `XML: Add Parameterless Constructor`: Adds an empty constructor without any parameters, with XML documentation
 
+![Screenshot](media/Screenshot%202025-08-28%20074816.png)
+
 You no longer have to manually write XML documentation for methods like `GetHashCode` or `Equals` - even an `<inheritdoc ... />` can take some time to write! AddWithXmlDoc does that for you.
 
 # ✨ Example

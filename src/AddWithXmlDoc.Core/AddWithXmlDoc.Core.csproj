@@ -5,10 +5,32 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <LangVersion>12</LangVersion>
+    <Title>AddWithXmlDoc.Core</Title>
+    <Authors>winscripter</Authors>
+    <Company>winscripter</Company>
+    <Product>AddWithXmlDoc.Core</Product>
+    <Description>A library that uses Roslyn to add common methods to classes and structs with XML Documentation</Description>
+    <Copyright>Copyright (c) 2023-2025, winscripter</Copyright>
+    <PackageProjectUrl>https://github.com/winscripter/AddWithXmlDoc</PackageProjectUrl>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <RepositoryUrl>https://github.com/winscripter/AddWithXmlDoc</RepositoryUrl>
+    <PackageTags>VisualStudio;Visual Studio;Roslyn;C#;CSharp;Code;Generator;SourceGeneration;Source Generation</PackageTags>
+    <AssemblyVersion>1.0.1.0</AssemblyVersion>
+    <FileVersion>1.0.1.0</FileVersion>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
+    <Version>1.0.1</Version>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="Microsoft.CodeAnalysis.CSharp" Version="3.3.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
   </ItemGroup>
 
 </Project>

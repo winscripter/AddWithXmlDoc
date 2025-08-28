@@ -13,7 +13,7 @@ internal static class XmlUtil
         tds = (TypeDeclarationSyntax)tds.AddBaseListTypes(
             SyntaxFactory.SimpleBaseType(
                 SyntaxFactory.GenericName(
-                    SyntaxFactory.Identifier("IEnumerable"))
+                    SyntaxFactory.Identifier("IEquatable"))
             .WithTypeArgumentList(
                 SyntaxFactory.TypeArgumentList(
                     SyntaxFactory.SingletonSeparatedList<TypeSyntax>(

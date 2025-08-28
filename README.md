@@ -115,8 +115,8 @@ public class Class1
 ```
 
 # 🧱 Prerequisites
-AddWithXmlDoc supports all Visual Studio versions starting from Visual Studio 2017. You should have
-Visual Studio versions at least 2017 to use AddWithXmlDoc.
+AddWithXmlDoc supports all Visual Studio versions starting from Visual Studio 2022. You should have
+Visual Studio versions at least 2022 to use AddWithXmlDoc.
 
 # 📦 Building
 You'll have to have Visual Studio workloads `.NET Desktop Development` and `Visual Studio extension development` prior to building AddWithXmlDoc.

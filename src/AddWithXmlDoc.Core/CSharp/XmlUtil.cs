@@ -52,12 +52,13 @@ internal static class XmlUtil
             SyntaxFactory.SimpleBaseType(
                 SyntaxFactory.GenericName(
                     SyntaxFactory.Identifier("IEquatable"))
-            .WithTypeArgumentList(
-                SyntaxFactory.TypeArgumentList(
-                    SyntaxFactory.SingletonSeparatedList<TypeSyntax>(
-                        SyntaxFactory.IdentifierName(input.Identifier.Text))))
-            .NormalizeWhitespace()
-            ));
+                .WithTypeArgumentList(
+                    SyntaxFactory.TypeArgumentList(
+                        SyntaxFactory.SingletonSeparatedList<TypeSyntax>(
+                            SyntaxFactory.NullableType(
+                                SyntaxFactory.IdentifierName(input.Identifier.Text))))))
+                .NormalizeWhitespace()
+            );
         return input;
     }
 

@@ -63,7 +63,15 @@ You'll have to have Visual Studio workloads `.NET Desktop Development` and `Visu
 After that, open the solution VSAddWithXmlDoc.sln, and click Ctrl+Shift+B in Visual Studio to build the entire solution!
 
 # ❔ Got any questions?
-Feel free to create an Issue post on the GitHub Repository if you have any questions, found a bug, or proposing a suggestion!
+Feel free to create an Issue post on the GitHub Repository if you have any questions, found a bug, or proposing a suggestion! I will be happy to respond or help.
+
+# ❤️ How can I help?
+If you've tried our extension and you'd like to help:
+- You can star our GitHub Repository if you like the extension,
+- You can give a ★★★★★ rating on the [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=winscripter.ExtVSAddWithXmlDoc) if you really like the extension,
+- You can recommend the extension to others, like coworkers, friends, or colleagues, if you **really really** like the extension,
+
+We highly appreciate any help, and any form of help means a lot to me.
 
 # 🤗 Author
 [winscripter](https://github.com/winscripter)

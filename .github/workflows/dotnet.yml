@@ -24,7 +24,7 @@ jobs:
       run: dotnet restore
     - name: Build selected projects
       run: |
-        dotnet build src/AddWithXmlDoc.Core.csproj
+        dotnet build src/AddWithXmlDoc.Core/AddWithXmlDoc.Core.csproj
         dotnet build src/VSAddWithXmlDoc/VSAddWithXmlDoc/VSAddWithXmlDoc.csproj
     - name: Test
       run: dotnet test --no-build --verbosity normal

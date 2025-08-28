@@ -71,7 +71,7 @@ If you've tried our extension and you'd like to help:
 - You can give a ★★★★★ rating on the [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=winscripter.ExtVSAddWithXmlDoc) if you really like the extension,
 - You can recommend the extension to others, like coworkers, friends, or colleagues, if you **really really** like the extension,
 
-We highly appreciate any help, and any form of help means a lot to me.
+Every bit of support means a lot to me - thank you for being part of this journey!
 
 # 🤗 Author
 [winscripter](https://github.com/winscripter)

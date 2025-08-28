@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
   <Metadata>
-    <Identity Id="VSAddWithXmlDoc..94e49af1-4caf-464b-be46-31c0ec2e8d53" Version="1.0.2" Language="en-US" Publisher="winscripter"/>
+    <Identity Id="VSAddWithXmlDoc..94e49af1-4caf-464b-be46-31c0ec2e8d53" Version="2.0.0" Language="en-US" Publisher="winscripter"/>
     <DisplayName>AddWithXmlDoc</DisplayName>
     <Description xml:space="preserve">This extension allows you to add methods like Equals, GetHashCode, and parameterless constructors, with XML documentation inserted for you. See more on https://github.com/winscripter/AddWithXmlDoc.</Description>
   </Metadata>

@@ -39,4 +39,9 @@ public interface IXmlAdd
     /// </summary>
     /// <param name="del">Once the operation is complete, the new node is sent here.</param>
     void Invoke(NewNodeDelegate del);
+
+    /// <summary>
+    ///   Makes use of the &lt;inheritdoc cref="..." /&gt; element where possible. Default value: <see langword="false"/>.
+    /// </summary>
+    bool UseInheritdocWherePossible { get; set; }
 }

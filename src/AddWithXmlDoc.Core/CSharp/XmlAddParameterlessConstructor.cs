@@ -13,6 +13,8 @@ internal sealed class XmlAddParameterlessConstructor : IXmlAddParameterlessConst
 
     public string Language => LanguageNames.CSharp;
 
+    public bool UseInheritdocWherePossible { get; set; }
+
     public void Invoke(NewNodeDelegate del)
     {
         if (_rootNode == null)

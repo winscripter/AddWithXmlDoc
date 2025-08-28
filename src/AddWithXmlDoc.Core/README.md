@@ -39,6 +39,7 @@ Use the `AddEqualityMembersToMembers` method to add equality members to fields a
 
 ```cs
 container.AddEqualityMembersToMembers.ProvideRootNode(declaration);
+container.AddEqualityMembersToMembers.UseInheritdocWherePossible = false; // set to true if you want to use inheritdoc
 container.AddEqualityMembersToMembers.Invoke(
     (result) =>
     {

@@ -12,20 +12,6 @@ var csharpLSC = LanguageServicesContainer.CreateCSharp();
 
 var type = parsed.GetRoot().DescendantNodes().OfType<TypeDeclarationSyntax>().First();
 
-csharpLSC.AddEqualityMembersToFields.ProvideRootNode(type);
-csharpLSC.AddEqualityMembersToFields.Invoke((newNode) =>
-{
-    Console.WriteLine("Equality to Fields:");
-    Console.WriteLine(newNode.ToString());
-});
-
-csharpLSC.AddEqualityMembersToProperties.ProvideRootNode(type);
-csharpLSC.AddEqualityMembersToProperties.Invoke((newNode) =>
-{
-    Console.WriteLine("Equality to Properties:");
-    Console.WriteLine(newNode.ToString());
-});
-
 csharpLSC.AddEqualityMembersToMembers.ProvideRootNode(type);
 csharpLSC.AddEqualityMembersToMembers.Invoke((newNode) =>
 {
@@ -37,5 +23,13 @@ csharpLSC.AddParameterlessConstructor.ProvideRootNode(type);
 csharpLSC.AddParameterlessConstructor.Invoke((newNode) =>
 {
     Console.WriteLine("Parameterless Constructor:");
+    Console.WriteLine(newNode.ToString());
+});
+
+csharpLSC.AddEqualityMembersToMembers.UseInheritdocWherePossible = true;
+csharpLSC.AddEqualityMembersToMembers.ProvideRootNode(type);
+csharpLSC.AddEqualityMembersToMembers.Invoke((newNode) =>
+{
+    Console.WriteLine("Inheritdoc Equality to Members:");
     Console.WriteLine(newNode.ToString());
 });

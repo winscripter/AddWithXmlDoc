@@ -10,6 +10,8 @@ internal sealed class XmlAddEqualityMembersToFields : IXmlAddEqualityMembersToFi
 
     public string Language => LanguageNames.CSharp;
 
+    public bool UseInheritdocWherePossible { get; set; } = false;
+
     public void Invoke(NewNodeDelegate del)
     {
         if (_rootNode == null)
@@ -17,9 +19,16 @@ internal sealed class XmlAddEqualityMembersToFields : IXmlAddEqualityMembersToFi
 
         TypeDeclarationSyntax tds = (TypeDeclarationSyntax)_rootNode;
 
-        del(XmlUtil.WithEqualsGetHashCodeOperatorsAndIEquatable(
-            tds,
-            tds.Members.Where(m => m is FieldDeclarationSyntax)));
+        del(
+            UseInheritdocWherePossible
+            ?
+            XmlUtil.InheritdocWithEqualsGetHashCodeOperatorsAndIEquatable(
+                tds,
+                tds.Members.Where(m => m is FieldDeclarationSyntax))
+            :
+            XmlUtil.WithEqualsGetHashCodeOperatorsAndIEquatable(
+                tds,
+                tds.Members.Where(m => m is FieldDeclarationSyntax)));
     }
 
     public void ProvideRootNode(SyntaxNode syntaxNode)
